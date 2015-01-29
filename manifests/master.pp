@@ -25,7 +25,7 @@ class mesos::master(
   $env_var        = {},
   $options        = {},
   $force_provider = undef, #temporary workaround for starting services
-  repo            = undef,
+  $repo            = undef,
 ) inherits mesos {
 
   validate_hash($env_var)
